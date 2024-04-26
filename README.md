@@ -16,7 +16,7 @@ value=$(($(cat "$file") + 1))
 
 echo $value > "$file"
 
-source .env && xc "step$value"
+xc "step$value"
 ```
 
 ### step1
@@ -65,14 +65,14 @@ open /Applications/Slack.app
 
 ```sh
 ./notify.sh "Review the active sprint tasks"
-open "$ACTIVE_SPRINT_URL"
+source .env && open "$ACTIVE_SPRINT_URL"
 ```
 
 ### step8
 
 ```sh
 ./notify.sh "Review unassigned tasks"
-open "$UNASSIGNED_TASKS_URL"
+source .env && open "$UNASSIGNED_TASKS_URL"
 ```
 
 ### step9
