@@ -2,6 +2,8 @@
 
 This morning routine script is powered by [xc](https://xcfile.dev/).
 
+https://www.youtube.com/watch?v=yCvK39GNg0c
+
 ### Next
 
 ```sh
