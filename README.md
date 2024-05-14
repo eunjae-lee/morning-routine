@@ -115,6 +115,6 @@ open "things:///show?id=anytime"
 ### step14
 
 ```sh
-one-thing ""
+/Users/eunjae/.asdf/shims/one-thing ""
 osascript -e 'display notification "Have a good day" with title "Morning Routine"'
 ```
