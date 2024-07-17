@@ -25,7 +25,7 @@ xc "step$value"
 
 ```sh
 ./notify.sh "Clean up daily note"
-shortcuts run "Open Daily Note"
+osascript -e 'tell application "System Events" to key code 105' # f13 key
 ```
 
 ### step2
