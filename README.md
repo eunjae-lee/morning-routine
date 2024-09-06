@@ -53,7 +53,7 @@ open "https://github.com/notifications"
 
 ```sh
 ./notify.sh "Check my PRs"
-open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2023-12-05"
+open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2024-07-01"
 ```
 
 ### step6
