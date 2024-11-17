@@ -25,7 +25,7 @@ xc "step$value"
 
 ```sh
 ./notify.sh "Clean up daily note"
-osascript -e 'tell application "System Events" to key code 105' # f13 key
+shortcuts run "Home Note"
 ```
 
 ### step2
@@ -38,8 +38,8 @@ open '/System/Applications/Mail.app'
 ### step3
 
 ```sh
-./notify.sh "Clean up Inbox notes"
-shortcuts run "Open Inbox Notes"
+./notify.sh "Review draft notes"
+shortcuts run "Open Draft Notes"
 ```
 
 ### step4
@@ -53,66 +53,59 @@ open "https://github.com/notifications"
 
 ```sh
 ./notify.sh "Check my PRs"
-open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2024-07-01"
+open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2024-11-06"
 ```
 
 ### step6
 
 ```sh
-./notify.sh "Read all the Slack messages"
-open /Applications/Slack.app
+./notify.sh "Read all the Campsite messages"
+open /Applications/Campsite.app
 ```
 
 ### step7
 
 ```sh
-./notify.sh "Review the active sprint tasks"
-source .env && open "$ACTIVE_SPRINT_URL"
+./notify.sh "Review issue inbox"
+source .env && open "$LINEAR_INBOX"
 ```
 
 ### step8
 
 ```sh
-./notify.sh "Review unassigned tasks"
-source .env && open "$UNASSIGNED_TASKS_URL"
+./notify.sh "Review my issues"
+source .env && open "$LINEAR_MY_ISSUES"
 ```
 
 ### step9
-
-```sh
-./notify.sh "Read Soon note"
-shortcuts run "Open Soon note"
-```
-
-### step10
 
 ```sh
 ./notify.sh "Handle overdue tasks"
 open "things:///show?id=today"
 ```
 
-### step11
+### step10
 
 ```sh
 ./notify.sh "Move tasks out of the inbox"
 open "things:///show?id=inbox"
 ```
 
-### step12
+### step11
 
 ```sh
 ./notify.sh "What can be done earlier"
 open "things:///show?id=upcoming"
 ```
 
-### step13
+### step12
 
 ```sh
 ./notify.sh "Should I schedule something"
 open "things:///show?id=anytime"
 ```
 
-### step14
+### step13
 
 ```sh
 /Users/eunjae/.asdf/shims/one-thing ""
