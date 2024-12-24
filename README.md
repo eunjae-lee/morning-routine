@@ -45,8 +45,8 @@ shortcuts run "Open Draft Notes"
 ### step4
 
 ```sh
-./notify.sh "Check GH notifications"
-open "https://github.com/notifications"
+./notify.sh "Check PRs to review"
+open "https://github.com/calcom/cal.com/pulls?q=is%3Aopen+is%3Apr+label%3Aconsumer+draft%3Afalse+created%3A%3E2024-12-01+-author%3Aeunjae-lee"
 ```
 
 ### step5
@@ -67,14 +67,14 @@ open /Applications/Campsite.app
 
 ```sh
 ./notify.sh "Review issue inbox"
-source .env && open "$LINEAR_INBOX"
+source .env && open -a Linear "$LINEAR_INBOX"
 ```
 
 ### step8
 
 ```sh
 ./notify.sh "Review my issues"
-source .env && open "$LINEAR_MY_ISSUES"
+source .env && open -a Linear "$LINEAR_MY_ISSUES"
 ```
 
 ### step9
