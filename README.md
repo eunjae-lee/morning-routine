@@ -53,14 +53,14 @@ open "https://github.com/calcom/cal.com/pulls?q=is%3Aopen+is%3Apr+label%3Aconsum
 
 ```sh
 ./notify.sh "Check my PRs"
-open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2024-11-06"
+open "https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3Aeunjae-lee+archived%3Afalse+created%3A%3E2024-12-04"
 ```
 
 ### step6
 
 ```sh
-./notify.sh "Read all the Campsite messages"
-open /Applications/Campsite.app
+./notify.sh "Read all the Slack messages"
+open /Applications/Slack.app
 ```
 
 ### step7
